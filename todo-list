@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Todo list</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+</head>
+<body>
+ <div id="container">
+   <h1>To-Do List</h1>
+   <input type="text">
+   
+   <ul>
+     <li><span>X</span> Go shopping</li>
+     <li><span>X</span> Do laundry</li>
+     <li><span>X</span> Learn JS</li>
+     
+   </ul>
+   
+ </div>
+  
+  
+</body>
+</html>
+
+
+#container{
+ border: 2px solid gray;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.completed{
+  color: gray;
+  text-decoration: line-through;
+}
+
+$("li").click(function(){
+  $(this).toggleClass("completed");
+  //if($(this).css("color") === "rgb(128, 128, 128)"){
+    
+    //$(this).css({
+    //color: "black",
+    //textDecoration: "none"
+    //});
+  //}
+  //else{
+    //$(this).css({
+    //color: "gray",
+    //textDecoration: "line-through"
+    //});
+  //}
+});
