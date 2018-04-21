@@ -19,3 +19,10 @@ $("span").click(function(){
   $(this).remove();
  event.stopPropagation();
 });
+
+$("span").click(function(){
+  $(this).parent().fadeOut(500, function(){
+    $(this).remove();
+  });
+ event.stopPropagation();
+});
