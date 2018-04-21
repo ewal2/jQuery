@@ -15,7 +15,7 @@ $("li").click(function(){
   //}
 });
 
-
 $("span").click(function(){
-  alert("Clicked on a span");
+  $(this).remove();
+ event.stopPropagation();
 });
