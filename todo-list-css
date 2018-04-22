@@ -15,9 +15,6 @@ h1{
   font-weight: normal; 
 }
 
-.fa-plus{
-  float: right;
-}
 
 ul{
   list-style: none;
@@ -32,15 +29,6 @@ li{
   color: #666;
 }
 
-li:nth-child(2n){
-  background: #f7f7f7;
-}
-
-li:hover span{
-  width: 40px;
-  opacity: 1.0;
-}
-
 span{
   background: #e74c3c;
   height: 40px;
@@ -52,6 +40,21 @@ span{
   transition: 0.2s linear;
   opacity: 0;
 }
+
+
+li:nth-child(2n){
+  background: #f7f7f7;
+}
+
+li:hover span{
+  width: 40px;
+  opacity: 1.0;
+}
+
+.fa-plus{
+  float: right;
+} 
+
 
 input{
   font-size: 18px;
